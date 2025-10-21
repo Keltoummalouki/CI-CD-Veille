@@ -1,0 +1,12 @@
+# Defines the sequence of stages in the pipeline(unique)
+  # Stages run in order, jobs within the same stage run in parallel.
+stages:
+  - test
+# Name of the job (unique)
+test_job:
+# Associates this job with the test stage.
+  stage: test
+# List of shell commands that GitLab will run in order.
+  script:
+    - npm install
+    - npm test
