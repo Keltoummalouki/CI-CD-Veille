@@ -1,5 +1,4 @@
-import sum from './sum'
-
-test('adds 1 + 2 = 3' , () => {
-    expect(sum(1,2)).toBe(3);
+const sum = require('./sum');
+test('adds 1 + 2 = 3', () => { // définit un test.
+  expect(sum(1, 2)).toBe(3); // on attend que le résultat soit 3.
 });
